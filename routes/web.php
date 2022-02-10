@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +12,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    //View::addExtension('html','php');
+    //return View::make('index');
     return view('welcome');
 });
+
+Route::get('login', 'Auth\LoginController@redirectToLoginPage')->name('login');

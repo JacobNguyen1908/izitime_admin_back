@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Broadcast;
-
 /*
 |--------------------------------------------------------------------------
 | Broadcast Channels
@@ -13,6 +11,18 @@ use Illuminate\Support\Facades\Broadcast;
 |
 */
 
-Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
-    return (int) $user->id === (int) $id;
+use App\Models\User;
+use Illuminate\Support\Facades\Broadcast;
+
+$dbName = env('DB_DATABASE');
+
+Broadcast::channel('{db}-App.Models.User.{userId}', function ($user, $db, $userId) use ($dbName) {
+    return +$user->id === +$userId && $db === $dbName;
+});
+
+Broadcast::channel('{db}-stats', function ($user, $db) use ($dbName) {
+    $userCount = User::find($user->id)->where('email', $user->email)->where('phone', $user->phone)->count();
+    if ($userCount >= 1 && $db === $dbName) {
+        return $user;
+    }
 });

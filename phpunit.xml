@@ -1,31 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
          bootstrap="vendor/autoload.php"
          colors="true"
->
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
     <testsuites>
         <testsuite name="Unit">
             <directory suffix="Test.php">./tests/Unit</directory>
         </testsuite>
+
         <testsuite name="Feature">
             <directory suffix="Test.php">./tests/Feature</directory>
         </testsuite>
+
+        <testsuite name="FeatureDBVM">
+            <directory suffix="Test.php">./tests/Feature/DBVM</directory>
+        </testsuite>
+
+        <testsuite name="FeatureEmptyDB">
+            <directory suffix="Test.php">./tests/Feature/EmptyDB</directory>
+        </testsuite>
+
+        <testsuite name="Middlewares">
+            <directory suffix="Test.php">./tests/Feature/Middlewares</directory>
+        </testsuite>
     </testsuites>
-    <coverage processUncoveredFiles="true">
-        <include>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">./app</directory>
-        </include>
-    </coverage>
+        </whitelist>
+    </filter>
+    <extensions>
+        <extension class="Tests\Bootstrap"/>
+    </extensions>
     <php>
         <server name="APP_ENV" value="testing"/>
         <server name="BCRYPT_ROUNDS" value="4"/>
         <server name="CACHE_DRIVER" value="array"/>
-        <!-- <server name="DB_CONNECTION" value="sqlite"/> -->
-        <!-- <server name="DB_DATABASE" value=":memory:"/> -->
-        <server name="MAIL_MAILER" value="array"/>
-        <server name="QUEUE_CONNECTION" value="sync"/>
+        <server name="MAIL_DRIVER" value="array"/>
+        <server name="QUEUE_CONNECTION" value="database"/>
         <server name="SESSION_DRIVER" value="array"/>
+        <server name="BROADCAST_DRIVER" value="pusher"/>
+        <server name="PUSHER_APP_ID" value="1142187"/>
+        <server name="PUSHER_APP_KEY" value="c98ae1966ba39c3cc42d"/>
+        <server name="PUSHER_APP_SECRET" value="e6ff094db619fd1f9b11"/>
+        <server name="PUSHER_APP_CLUSTER" value="mt1"/>
         <server name="TELESCOPE_ENABLED" value="false"/>
+        <server name="APP_CONFIG_CACHE" value="bootstrap/cache/config.phpunit.php"/>
+        <server name="APP_SERVICES_CACHE" value="bootstrap/cache/services.phpunit.php"/>
+        <server name="APP_PACKAGES_CACHE" value="bootstrap/cache/packages.phpunit.php"/>
+        <server name="APP_ROUTES_CACHE" value="bootstrap/cache/routes.phpunit.php"/>
+        <server name="APP_EVENTS_CACHE" value="bootstrap/cache/events.phpunit.php"/>
     </php>
 </phpunit>

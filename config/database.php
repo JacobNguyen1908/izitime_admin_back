@@ -91,6 +91,32 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'local' => [
+            'driver' => 'sqlsrv',
+            'url' => env('DATABASE_URL'),
+            'host' => env('LOCAL_DB_HOST', 'localhost'),
+            'port' => env('LOCAL_DB_PORT', '1433'),
+            'database' => env('LOCAL_DB_DATABASE', 'forge'),
+            'username' => env('LOCAL_DB_USERNAME', 'forge'),
+            'password' => env('LOCAL_DB_PASSWORD', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+        ],
+
+        'empty' => [
+            'driver' => 'sqlsrv',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', 'localhost'),
+            'port' => env('DB_PORT', '1433'),
+            'database' => env('EMPTY_DB_DATABASE', 'forge'),
+            'username' => env('EMPTY_DB_USERNAME', 'forge'),
+            'password' => env('EMPTY_DB_PASSWORD', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+        ],
+
     ],
 
     /*
@@ -130,16 +156,16 @@ return [
             'url' => env('REDIS_URL'),
             'host' => env('REDIS_HOST', '127.0.0.1'),
             'password' => env('REDIS_PASSWORD', null),
-            'port' => env('REDIS_PORT', '6379'),
-            'database' => env('REDIS_DB', '0'),
+            'port' => env('REDIS_PORT', 6379),
+            'database' => env('REDIS_DB', 0),
         ],
 
         'cache' => [
             'url' => env('REDIS_URL'),
             'host' => env('REDIS_HOST', '127.0.0.1'),
             'password' => env('REDIS_PASSWORD', null),
-            'port' => env('REDIS_PORT', '6379'),
-            'database' => env('REDIS_CACHE_DB', '1'),
+            'port' => env('REDIS_PORT', 6379),
+            'database' => env('REDIS_CACHE_DB', 1),
         ],
 
     ],

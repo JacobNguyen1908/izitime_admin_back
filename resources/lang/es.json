@@ -1,0 +1,28 @@
+
+{
+    "Hello!":"Hola!",
+    "Regards":"Saludos",
+    "Personal account created." : "Area personal creada.",
+    "Hello ": "Hola ",
+    "Your account was successfully created. You can now connect with your credentials:" : "Su área personal ha sido creada. Puede entrar con las siguientes credenciales:",
+    "Email: ": "Correo electrónico: ",
+    "Password: " : "Contraseña: ",
+    "Connect" : "Conexión",
+
+    "You are receiving this mail because we received a password reset request for your account." : "Recibe este correo electrónico porque se ha solicitado el restablecimiento de la contraseña de su cuenta.",
+    "Reset Password" : "Restablecer la contraseña",
+    "If you did not request a password reset, no further action is required.":"Si no eres el autor de esta solicitud, ignora este correo electrónico.",
+
+
+    "Your password was successfully reset." : "Su contraseña ha sido restablecida.",
+
+    "New leave request": "Nueva solicitud de vacaciones",
+    "You are receiving this mail because an employee has created a leave request": "Recibió esta carta porque un empleado creó una solicitud de vacaciones",
+    "Employee": "Empleado",
+    "Please connect to your account in order to approuve or refuse this request": "Inicie sesión en su cuenta para aprobar o rechazar esta solicitud",
+    "You are receiving this mail because an admin has validated your leave request": "Recibió este correo electrónico porque un administrador aprobó su solicitud de vacaciones",
+    "You are receiving this mail because an admin has rejected your leave request": "Recibió este correo electrónico porque un administrador rechazó su solicitud de vacaciones",
+    "It will be displayed on your account": "Se mostrará en su cuenta",
+    "It will be removed from your account": "Se borrará de tu cuenta",
+    "Leave request notification": "Dejar notificación de solicitud"
+}

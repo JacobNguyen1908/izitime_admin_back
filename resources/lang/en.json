@@ -1,0 +1,28 @@
+{
+    "Hello!":"Hello!",
+    "Regards":"Regards",
+    "Personal account created." : "Employee account created.",
+    "Hello ": "Hello ",
+    "Your account was successfully created. You can now connect with your credentials:" : "Your account was successfully created. You can now connect with your credentials:",
+    "Email: ": "Email: ",
+    "Password: " : "Password: ",
+    "Connect" : "Connect",
+
+
+    "You are receiving this mail because we received a password reset request for your account." : "You are receiving this mail because we received a password reset request for your account.",
+    "Reset Password" : "Reset Password",
+    "If you did not request a password reset, no further action is required.":"If you did not request a password reset, no further action is required.",
+
+
+    "Your password was successfully reset." : "Your password was successfully reset.",
+
+    "New leave request": "New leave request",
+    "You are receiving this mail because an employee has created a leave request": "You are receiving this mail because an employee has created a leave request",
+    "Employee": "Employee",
+    "Please connect to your account in order to approuve or refuse this request": "Please connect to your account in order to approuve or refuse this request",
+    "You are receiving this mail because an admin has validated your leave request": "You are receiving this mail because an admin has validated your leave request",
+    "You are receiving this mail because an admin has rejected your leave request": "You are receiving this mail because an admin has rejected your leave request",
+    "It will be displayed on your account": "It will be displayed on your account",
+    "It will be removed from your account": "It will be removed from your account",
+    "Leave request notification": "Leave request notification"
+}

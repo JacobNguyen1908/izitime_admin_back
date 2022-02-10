@@ -1,0 +1,28 @@
+{
+    "Hello!":"Bonjour!",
+    "Regards":"Cordialement",
+    "Personal account created." : "Espace personnel créé.",
+    "Hello ": "Bonjour ",
+    "Your account was successfully created. You can now connect with your credentials:" : "Votre espace personnel a bien été créé. Vous pouvez vous connecter avec les identifiants suivants:",
+    "Email: ": "Email: ",
+    "Password: " : "Mot de passe: ",
+    "Connect" : "Connexion",
+
+
+    "You are receiving this mail because we received a password reset request for your account." : "Vous recevez cet email car une demande de réinitialisation de mot de passe à été faite pour votre espace personnel.",
+    "Reset Password" : "Réinitialiser le mot de passe",
+    "If you did not request a password reset, no further action is required.":"Si vous n'êtes pas à l'origine de cette demande, ne tenez pas compte de cet email.",
+
+
+    "Your password was successfully reset." : "Votre mot de passe a bien été réinitialisé.",
+
+    "New leave request": "Nouvelle demande de congé",
+    "You are receiving this mail because an employee has created a leave request": "Vous recevez ce courrier car un employé a créé une demande de congé",
+    "Employee": "Employé(e)",
+    "Please connect to your account in order to approuve or refuse this request": "Veuillez vous connecter à votre compte pour approuver ou refuser cette demande",
+    "You are receiving this mail because an admin has validated your leave request": "Vous recevez ce courrier car un administrateur a approuvé votre demande de congé",
+    "You are receiving this mail because an admin has rejected your leave request": "Vous recevez ce courrier car un administrateur a rejeté votre demande de congé",
+    "It will be displayed on your account": "Elle sera affichée sur votre compte",
+    "It will be removed from your account": "Elle sera supprimée de votre compte",
+    "Leave request notification": "Notification de demande de congé"
+}
